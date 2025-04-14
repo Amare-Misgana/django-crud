@@ -22,6 +22,12 @@ def edit_table(request, id):
         student.save()
         return redirect("table_url")
 
+def delete_table(request, id):
+    print("I am being deleted")
+    if request.method == "POST":
+        student = MarkList.objects.get(id=id)
+        student.delete()
+        return redirect("table_url")
 
 
 def table(request):
