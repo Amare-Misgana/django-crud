@@ -1,13 +1,69 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 2em;
 }
 
-.api_hold{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3em;
+table {
+  width: 90%;
+  max-width: 800px;
+  margin: 2em auto;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+thead {
+  background-color: #4caf50;
+  color: white;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+.api_hold,
+td:last-child {
+  white-space: nowrap;
+  display: flex;
+  gap: 0.5em;
+}
+
+form {
+  margin: 0;
 }
