@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Edit {{student.student_name}}
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static "table/css/edit_table.css" %}">
+{% endblock %}
+
+{% block content %}
+    <div class="edit_board">
+        <form method="post" action="{% url "edit_table_url" student.id %}">
+            {% csrf_token %}
+            <input name="student" type="text" value="{{student.student_name}}" placeholder="Name..." required>
+            <input name="mark" type="number" value="{{student.mark}}" placeholder="Mark..." required>
+            <button type="submit"> Update </button>
+        </form>
+    </div>
+{% endblock %}
