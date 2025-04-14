@@ -1,6 +1,49 @@
 body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+.edit_board {
+  max-width: 400px;
+  margin: 5em auto;
+  background: white;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.edit_board form {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.edit_board input {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border 0.3s;
+}
+
+.edit_board input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.edit_board button {
+  padding: 0.8em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.edit_board button:hover {
+  background-color: #388e3c;
 }
